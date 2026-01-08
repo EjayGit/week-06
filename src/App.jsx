@@ -1,31 +1,28 @@
-// Do not put all code in App.jsx
-// containers example: image, single image, ui buttons
-// Start with wireframe: build react App UI first, then start coding.
-
-
-import { useState } from 'react'
 import './App.css'
+import {useState, useEffect} from "react";
 
-function App() {
-  // state
-  // variable to store API image data
-  // variable to store current image
+export default function App() {
+  const [images, setImages] = useState([]);
 
-  // effects
-  // fetch data from API
-  // https://api.thecatapi.com/v1/images/search?limit=10
-  // put it in state
+  useEffect(() => {
+    async function fetchData() {
+      const response = await fetch(
+        import.meta.env.VITE_API_URL
+      );
+      const data = await response.json();
+      setImages(data);
+    }
+    fetchData();
+  }, []);
 
-  // functions event handlers
-  // when user clicks image
-  // when a user presses a button that switches image left/right
   return (
-    <>
+    <div>
       <h1>Gallery</h1>
-      <div>thubmnail container showing all image using .map with key</div>
-      <div>big image container</div>
-    </>
+      <ul>
+        {images.map((image) => {
+          return <img key={image.id} src={image.url} alt={'An image of a cat'}></img>
+        })}
+      </ul>
+    </div>
   )
 }
-
-export default App
