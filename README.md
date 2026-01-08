@@ -1,16 +1,20 @@
-# React + Vite
+# Instructions
+## User Stories
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+    🐿️ As a developer, I want the application to use the useState hook so that user interactions (like selecting an image) are smooth and the gallery’s state is managed effectively.
+    🐿️ As a developer, I want to use the useEffect hook to perform side effects, such as fetching image data from an external API.
+    🐿️ As a developer, I want to create separate files that return JSX instead of including all JSX within App.jsx so that the code is well-organized, making the app more maintainable and reliable for the user.
+    🐿️ As a user, I want to see a collection of image thumbnails displayed clearly on the page.
+    🐿️ As a user, I want to be able to click on an image thumbnail to view a larger version of that image, possibly in a modal or a dedicated view.
+    🐿️ As a user who relies on assistive technologies, I want images to have descriptive alt text so I can understand their content.
+    🐿️ As a user who navigates with a keyboard, I want to be able to tab through the interactive elements (like thumbnails and buttons) in a logical order.
 
-Currently, two official plugins are available:
+## Requirements
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+    🎯 Implement the useState hook to manage gallery state (e.g. selected image).
+    🎯 Use useEffect for initial fetching of images from an external API.
+    🎯 Return JSX from multiple components (e.g., an ImageItem component for each image and a Gallery component to display them).
+    🎯 Use the .map() function to render an array of images dynamically
+    🎯 Implement functionality to display a larger version of an image when its thumbnail is clicked.
+    🎯 Ensure all images have meaningful alt text.
+    🎯 Ensure basic keyboard navigation for image selection (e.g., thumbnails should be focusable and activatable with Enter/Space).
