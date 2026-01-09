@@ -1,4 +1,11 @@
 # Instructions
+
+## Lighthouse report
+95%: Performance.
+98%: Accessiblity.
+96%: Best practices.
+91%: SEO.
+
 ## User Stories
 
     🐿️ As a developer, I want the application to use the useState hook so that user interactions (like selecting an image) are smooth and the gallery’s state is managed effectively.
