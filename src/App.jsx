@@ -10,7 +10,7 @@ export default function App() {
   const [currentImage, setCurrentImage] = useState(0);
   
   return (
-    <div>
+    <div class='body'>
       <h1>Gallery</h1>
       <GlobalKeyPress setCurrentImage={setCurrentImage} currentImage={currentImage} images={images}/>
       <DecrementButton images={images} currentImage={currentImage} setCurrentImage={setCurrentImage}/>

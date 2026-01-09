@@ -8,7 +8,7 @@ function DecrementButton({images, currentImage, setCurrentImage}){
       }
     }
 
-    return <button onClick={() => decrementImageState()}>Decrease number</button>
+    return <button className="decrementBtn" onClick={() => decrementImageState()}>Left</button>
 }
 
 export default DecrementButton

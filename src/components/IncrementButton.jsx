@@ -8,7 +8,7 @@ function IncrementButton({images, currentImage, setCurrentImage}){
         }
     }
 
-    return <button onClick={() => incrementImageState()}>Increase number</button>
+    return <button className='incrementBtn' onClick={() => incrementImageState()}>Right</button>
 }
 
 export default IncrementButton
