@@ -1,14 +1,13 @@
-import {useState} from 'react';
-
-function IncrementButton(){
-    const [image, setImage] = useState(0)
+function IncrementButton({images, currentImage, setCurrentImage}){
     
     function incrementImageState(){
-        if (image < 9){
-        setImage(image + 1);
+        if (currentImage < images.length -1){
+        setCurrentImage(currentImage + 1);
         } else {
-        setImage(0);
+        setCurrentImage(0);
         }
+        console.log(currentImage);
+        console.log(images[currentImage].url)
     }
 
     return <button onClick={() => incrementImageState()}>Increase number</button>
