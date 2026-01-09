@@ -47,4 +47,4 @@
 
 # Reflection
 
-Please also provide an assignment reflection in your project README.md file.
+I am not as familiar with React as I was with HTML/JS, but I increasingly felt more comfortable using React throughout the project. Once I had completed the majority of the project in App.jsx, I then modularised some components, which helped me understand how to do this effectively and it was completed quickly. I think I can see how React is beneficial, however will require more practice before becoming as confident with it as I would like to become.
