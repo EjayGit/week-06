@@ -6,8 +6,6 @@ function DecrementButton({images, currentImage, setCurrentImage}){
       } else {
         setCurrentImage(images.length -1);
       }
-      console.log(currentImage);
-      console.log(images[currentImage].url)
     }
 
     return <button onClick={() => decrementImageState()}>Decrease number</button>

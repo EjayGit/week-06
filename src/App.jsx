@@ -3,6 +3,7 @@ import {useState} from "react";
 import DecrementButton from './components/DecrementButton'
 import IncrementButton from './components/IncrementButton'
 import Thumbnails from './components/Thumbnails'
+import GlobalKeyPress from './components/GlobalKeyPress'
 
 export default function App() {
   const [images, setImages] = useState([]);
@@ -11,6 +12,7 @@ export default function App() {
   return (
     <div>
       <h1>Gallery</h1>
+      <GlobalKeyPress setCurrentImage={setCurrentImage} currentImage={currentImage} images={images}/>
       <DecrementButton images={images} currentImage={currentImage} setCurrentImage={setCurrentImage}/>
       <IncrementButton images={images} currentImage={currentImage} setCurrentImage={setCurrentImage}/>
       <Thumbnails images={images} setImages={setImages} setCurrentImage={setCurrentImage}/>
