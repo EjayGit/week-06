@@ -18,22 +18,24 @@
     top: 65px;
     left: 40%;
     padding: 10px;
-    height: 45px;
-    width: 55px;
+    height: 50px;
+    width: 60px;
     margin-left: -35px;
     border-radius: 50%;
     background-color: whitesmoke;
+    border: 4px darkgrey solid;
 }
 
 .incrementBtn{
   position: absolute;
     top: 65px;
-    left: 60%;
+    right: 35%;
     padding: 10px;
-    height: 45px;
-    width: 55px;
+    height: 50px;
+    width: 60px;
     border-radius: 50%;
     background-color: whitesmoke;
+    border: 4px darkgrey solid;
 }
 
 .thumbnail-container{
@@ -72,15 +74,17 @@
   }
   .incrementBtn{
     top: 65px;
-    right:42%;
+    right:38%;
   }
 }
 
 @media (max-width:950px){
   .decrementBtn{
     top: 65px;
+    left: 35%;
   }
   .incrementBtn{
     top: 65px;
+    right: 28%;
   }
 }

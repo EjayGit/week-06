@@ -11,7 +11,6 @@ export default function App() {
   
   return (
     <div class='body'>
-      <h1>Gallery</h1>
       <GlobalKeyPress setCurrentImage={setCurrentImage} currentImage={currentImage} images={images}/>
       <DecrementButton images={images} currentImage={currentImage} setCurrentImage={setCurrentImage}/>
       <IncrementButton images={images} currentImage={currentImage} setCurrentImage={setCurrentImage}/>
