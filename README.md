@@ -2,8 +2,11 @@
 
 ## Lighthouse report
 95%: Performance.
+
 98%: Accessiblity.
+
 96%: Best practices.
+
 91%: SEO.
 
 ## User Stories
