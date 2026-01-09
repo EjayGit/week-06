@@ -7,7 +7,7 @@
 
 96%: Best practices.
 
-91%: SEO.
+100%: SEO.
 
 ## User Stories
 
