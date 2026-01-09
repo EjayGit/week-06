@@ -12,9 +12,39 @@
 ## Requirements
 
     🎯 Implement the useState hook to manage gallery state (e.g. selected image).
+    I did implement a useState hook to manage gallery states.
     🎯 Use useEffect for initial fetching of images from an external API.
+    I did use useEffect for fetching images from an external API.
     🎯 Return JSX from multiple components (e.g., an ImageItem component for each image and a Gallery component to display them).
+    I have used multiple jsx components.
     🎯 Use the .map() function to render an array of images dynamically
+    I have used the .map() function to render an array of images dynamically.
     🎯 Implement functionality to display a larger version of an image when its thumbnail is clicked.
+    I have displayed a larger image when its thumbnail is selected.
     🎯 Ensure all images have meaningful alt text.
+    I have given all images the same alt text as they are randomly selected bythe api.
     🎯 Ensure basic keyboard navigation for image selection (e.g., thumbnails should be focusable and activatable with Enter/Space).
+    I can navigate images using the keyboard.
+
+# Stretch Goals
+## Stretch User Stories
+
+    🐿️ As a user, I want to be able to change the images in the gallery using a search bar.
+    🐿️ As a developer, I want to be able to fetch images from an API with a larger amount of data, such as Unsplash.
+    🐿️ As a developer I don’t want anyone to know my API keys from code.
+    🐿️ As a user I want the app to look pleasing.
+
+## Stretch Requirements
+
+    🏹 Use useEffect and the dependancy array to update the images when the user types in an input field.
+    I have not attempted the search bar as I am not sure how I could search through for randomly uploaded images.
+    🏹 Set up an Unsplash application that you can fetch from your React app.
+    I have fetched data from thecatapi, which permits up to 10 images without registering. I do not believe there is a reason to think this application would be limited in how many photos it can handle.
+    🏹 Use .env to hide your API keys and tokens from the code.
+    I have hidden the API URL from the code and is stored in an environment variable.
+    🏹 Style the application excellently, using grid or flex and positioning.
+    I have styled the application so that the main image is easy to view as are the thumbnails. The page is responsive and uses a combination of flex and absolute positioning.
+
+# Reflection
+
+Please also provide an assignment reflection in your project README.md file.
