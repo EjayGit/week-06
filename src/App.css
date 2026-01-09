@@ -4,6 +4,38 @@
   box-sizing: border-box;
 }
 
+.body{
+  display: flex;
+  flex-direction: column;
+  top: 10px;
+  left: 50%;
+  z-index: 1;
+  align-items: center;
+}
+
+.decrementBtn{
+  position: absolute;
+    top: 65px;
+    left: 40%;
+    padding: 10px;
+    height: 45px;
+    width: 55px;
+    margin-left: -35px;
+    border-radius: 50%;
+    background-color: whitesmoke;
+}
+
+.incrementBtn{
+  position: absolute;
+    top: 65px;
+    left: 60%;
+    padding: 10px;
+    height: 45px;
+    width: 55px;
+    border-radius: 50%;
+    background-color: whitesmoke;
+}
+
 .thumbnail-container{
   position: absolute;
   top: 75px;
@@ -28,4 +60,27 @@
   width: 100vw;
   height: 100vh;
   object-fit: contain;
+}
+
+@media (max-width:1250px) {
+  .thumbnail-container{
+    top: 120px;
+  }
+  .decrementBtn{
+    top: 65px;
+    left: 42%;
+  }
+  .incrementBtn{
+    top: 65px;
+    right:42%;
+  }
+}
+
+@media (max-width:950px){
+  .decrementBtn{
+    top: 65px;
+  }
+  .incrementBtn{
+    top: 65px;
+  }
 }
