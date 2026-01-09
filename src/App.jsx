@@ -3,7 +3,7 @@ import {useState, useEffect} from "react";
 
 export default function App() {
   const [images, setImages] = useState([]);
-  const [image, setImage] = useState(0);
+  const [currentImage, setCurrentImage] = useState(0);
 
   useEffect(() => {
     async function fetchData() {
@@ -16,17 +16,42 @@ export default function App() {
     fetchData();
   }, []);
 
+  function incrementImageState(){
+    if (currentImage < images.length -1){
+      setCurrentImage(currentImage + 1);
+    } else {
+      setCurrentImage(0);
+    }
+    console.log(currentImage);
+  }
+
+  function decrementImageState(){
+    if (currentImage > 0){
+      setCurrentImage(currentImage - 1);
+    } else {
+      setCurrentImage(images.length -1);
+    }
+    console.log(currentImage);
+    console.log(images[currentImage].url)
+  }
+
+  function selectImage(index){
+    console.log(index);
+    setCurrentImage(index);
+  }
+  
   return (
     <div>
       <h1>Gallery</h1>
-      <button onClick={() => setImage(image - 1)}>Decrease number</button>
-      <button onClick={() => setImage(image + 1)}>Increase number</button>
-      {<p>The number is {image}</p>}
-      <ul>
-        {images.map((image) => {
-          return <img key={image.id} src={image.url} alt={'An image of a cat'}></img>
+      <button onClick={() => decrementImageState()}>Decrease number</button>
+      <button onClick={() => incrementImageState()}>Increase number</button>
+      <div className='thumbnail-container'>
+        {images.map((image, index) => {
+          return <img onClick={() => selectImage(index)} className='thumbnails' key={index} src={image.url} alt={'An image of a cat'}></img>
+          
         })}
-      </ul>
+      </div>
+      {images.length > 0 && (<img className='image-fullscreen' src={images[currentImage].url} alt={'An image of a cat'} />)}
     </div>
   )
 }
