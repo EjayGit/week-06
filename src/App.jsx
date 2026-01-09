@@ -11,7 +11,7 @@ export default function App() {
   
   return (
     <div class='body'>
-      <meta name="keywords" content="React, cats, image gallery" />
+      <meta name="description" content="An image gallery of cats." />
       <GlobalKeyPress setCurrentImage={setCurrentImage} currentImage={currentImage} images={images}/>
       <DecrementButton aria-label={'slide image left'} images={images} currentImage={currentImage} setCurrentImage={setCurrentImage}/>
       <IncrementButton aria-label={'slide image right'} images={images} currentImage={currentImage} setCurrentImage={setCurrentImage}/>
