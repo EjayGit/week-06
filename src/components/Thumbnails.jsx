@@ -21,7 +21,7 @@ function Thumbnails({images, setImages, setCurrentImage}){
     return (
         <div className='thumbnail-container'>
             {images.map((image, index) => {
-            return <img onClick={() => selectImage(index)} className='thumbnails' key={index} src={image.url} alt={'An image of a cat'}></img>
+            return <img aria-label={`Image number ${index+1}`} onClick={() => selectImage(index)} className='thumbnails' key={index} src={image.url} alt={'An image of a cat'}></img>
             })}
         </div>)
 }
